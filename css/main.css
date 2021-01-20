@@ -1,0 +1,172 @@
+/* The below code is for custom navbar stuff */
+
+/* change the background color */
+/*.navbar-custom {*/
+/*    background-color: #ff5500;*/
+/*}*/
+
+p {
+    font-size: 20px;
+    color: #cfcdcd;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #86c6d6;
+}
+
+.fa {
+    color: white;
+}
+
+/* change the link color */
+.navbar-dark .navbar-nav .nav-link {
+    color: white; !important;
+}
+
+/* change the color of active or hovered links */
+.navbar-dark .nav-item:hover .nav-link {
+    color: lightblue; !important
+}
+
+
+/* The below code is for the home page */
+
+.header {
+    background-image: url('../images/space.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.home {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+}
+
+.home h1 {
+    color: white;
+    font-size: 80px
+}
+
+.home h3 {
+    color: white;
+    font-size: 40px
+}
+
+.social li {
+    display: inline;
+    padding: 60px;
+    text-align: center;
+}
+
+
+
+/* The below code is for the about page*/
+
+.about {
+    background-color: #090909;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #ff8c00;
+}
+
+.about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* The below code is for the projects page*/
+
+.projects {
+    background-color: #131313;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.projects h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #ff8c00;
+}
+
+.projects h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #ff8c00;
+}
+
+
+.projects img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+
+/* The below code is for the cool stuff page*/
+
+.personal {
+    background-color: #090909;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.personal h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #ff8c00;
+}
+
+.personal img {
+    height: 290px;
+    width: 180px;
+    margin: 10px;
+}
+
+
+/* The below code is for the contact page*/
+
+.contact {
+    background-color: #131313;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact h1 {
+    padding-bottom: 30px;
+    color: #ff8c00
+}
+
+.contact h4 {
+    color: #ff8c00
+}
+
+.contact img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
