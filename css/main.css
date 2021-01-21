@@ -4,6 +4,15 @@
 /*.navbar-custom {*/
 /*    background-color: #ff5500;*/
 /*}*/
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
+}
 
 p {
     font-size: 20px;
