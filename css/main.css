@@ -12,12 +12,12 @@ body {
 }
 
 /* Above styles weren't working on my phone so maybe this will help*/
-.wrapper {
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 100%;
-}
+/*.wrapper {*/
+/*    position: relative;*/
+/*    overflow-x: hidden;*/
+/*    overflow-y: auto;*/
+/*    height: 100%;*/
+/*}*/
 
 p {
     font-size: 20px;
@@ -78,7 +78,7 @@ a:hover {
 @media only screen and (max-width: 960px) {
     .home {
         position: relative;
-        transform: translate(10%, 30%);
+        transform: translate(10%, 25%);
     }
 
     .home h1 {
