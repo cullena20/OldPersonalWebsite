@@ -7,3 +7,8 @@ $(document).ready(function(){
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
+
+ // Disable overscroll / viewport moving on everything but scrollable divs
+ $('body').on('touchmove', function (e) {
+         if (!$('.scrollable').has($(e.target)).length) e.preventDefault();
+ });

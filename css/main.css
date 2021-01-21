@@ -2,7 +2,6 @@ html {
     position: relative;
     overflow: hidden;
     height: 100%;
-    overscroll-behavior: none;
 }
 
 body {
@@ -10,8 +9,8 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
-    overscroll-behavior: none;
 }
+
 
 /* Above styles weren't working on my phone so maybe this will help*/
 /*.wrapper {*/
