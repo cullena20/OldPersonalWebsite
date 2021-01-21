@@ -1,16 +1,17 @@
-/* The below code is for custom navbar stuff */
-
-/* change the background color */
-/*.navbar-custom {*/
-/*    background-color: #ff5500;*/
-/*}*/
-
 html {
     overflow: hidden;
     height: 100%;
 }
 
 body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* Above styles weren't working on my phone so maybe this will help*/
+.wrapper {
+    position: relative;
     overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
@@ -33,6 +34,13 @@ a:hover {
 .fa {
     color: white;
 }
+
+/* The below code is for custom navbar stuff */
+
+/* change the background color */
+/*.navbar-custom {*/
+/*    background-color: #ff5500;*/
+/*}*/
 
 /* change the link color */
 .navbar-dark .navbar-nav .nav-link {
@@ -63,29 +71,52 @@ a:hover {
     background: rgba(0, 0, 0, 0.1);
 }
 
-.home {
-    left: 50%;
-    position: absolute;
-    top: 45%;
-    transform: translate(-50%, -55%);
+/* very brute force way of doing this */
+
+@media only screen and (max-width: 960px) {
+    .home {
+        position: relative;
+        transform: translate(10%, 40%);
+    }
+
+    .home h1 {
+        color: white;
+        font-size: 70px
+    }
+
+    .home h3 {
+        color: white;
+        font-size: 40px
+    }
+
+    .social li {
+        display: inline;
+        padding: 15px;
+        text-align: center;
+    }
+
 }
 
-.home h1 {
-    color: white;
-    font-size: 80px
-}
+@media only screen and (min-width: 960px) {
+    .home {
+        position: relative;
+        transform: translate(25%, 40%);
+    }
+    .home h1 {
+        color: white;
+        font-size: 90px
+    }
 
-.home h3 {
-    color: white;
-    font-size: 40px
+    .home h3 {
+        color: white;
+        font-size: 60px
+    }
+    .social li {
+        display: inline;
+        padding: 60px;
+        text-align: center;
+    }
 }
-
-.social li {
-    display: inline;
-    padding: 60px;
-    text-align: center;
-}
-
 
 
 /* The below code is for the about page*/
@@ -102,23 +133,17 @@ a:hover {
     color: #ff8c00;
 }
 
-@media only screen and (max-width: 768px) {
-    .about img {
+.about img {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+@media only screen and (max-width: 768px) {
+    .about img {
         padding-bottom: 30px;
     }
 }
-
-@media only screen and (min-width: 768px) {
-    .about img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 
 
 /* The below code is for the projects page*/
@@ -141,7 +166,6 @@ a:hover {
     color: #ff8c00;
 }
 
-
 .projects img {
     display: block;
     margin-left: auto;
@@ -149,11 +173,10 @@ a:hover {
     padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-    .description {
-        padding-bottom: 30px;
-    }
+.project {
+    padding-bottom: 30px;
 }
+
 
 /* The below code is for the cool stuff page*/
 
@@ -161,10 +184,10 @@ a:hover {
     background-color: #090909;
     padding-top: 80px;
     padding-bottom: 80px;
+    text-align: center;
 }
 
 .personal h1 {
-    text-align: center;
     padding-bottom: 30px;
     color: #ff8c00;
 }
@@ -172,22 +195,10 @@ a:hover {
 .personal img {
     height: 290px;
     width: 180px;
+    margin: 10px;
+    display: inline-block;
 }
 
-@media only screen and (max-width: 600px) {
-    .personal img {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 20px;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .personal img {
-        margin: 10px;
-    }
-}
 
 /* The below code is for the contact page*/
 

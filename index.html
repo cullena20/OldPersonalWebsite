@@ -9,39 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 <body>
-<!-- This for fixed top. Navbar in header for transparent. Find a way to merge the two -->
-<!--  <nav class="navbar navbar-expand-md navbar-dark bg-secondary">-->
-<!--    <div class="container">-->
-<!--      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">-->
-<!--              <span class="navbar-toggler-icon"></span>-->
-<!--      </button>-->
-<!--      <div class="collapse navbar-collapse" id="navbarMenu">-->
-<!--        <ul class="navbar-nav nav-fill w-50 mx-auto">-->
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link" href="#home">Home</a>-->
-<!--          </li>-->
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link" href="#about">About Me</a>-->
-<!--          </li>-->
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link" href="#projects">Projects</a>-->
-<!--          </li>-->
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link" href="#cool">Cool Stuff</a>-->
-<!--          </li>-->
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link" href="#contact">Contact</a>-->
-<!--          </li>-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--    </div>-->
-<!--  </nav>-->
-  <header class="header page-header container-fluid" id="home">
+  <div class="wrapper">
+    <header class="header page-header container-fluid" id="home">
     <div class="overlay">
       <!-- Alternative navbar. Figure out a way to blend the two -->
       <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu2">
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu2" style="margin-left: auto">
                   <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarMenu2">
@@ -65,7 +39,7 @@
         </div>
         </div>
       </nav>
-      <div class="container w-50 mx-auto home">
+      <div class="container home">
         <div class="row">
           <h3 class="col-md-12">Hello,</h3>
           <h3 class="col-md-12">my name is</h3>
@@ -80,120 +54,140 @@
       </div>
     </div>
   </header>
-  <div class="container-fluid about" id="about">
-    <div class="container">
-      <div class="row col-md-12">
-        <h1> Hi There!</h1>
-      </div>
-      <div class="row about-content">
-        <div class="col-md-6">
-          <img src="images/me2.JPG" class="img-fluid">
+    <div class="container-fluid about" id="about">
+      <div class="container">
+        <div class="row col-md-12">
+          <h1> Hi There!</h1>
         </div>
-        <div class="col-md-6">
-          <p>
-            Welcome to my website! My name is Cullen Anderson and I love to learn new things and solve problems.
-            I'm specifically interested in computer science and artificial intelligence.
-            Outside of that, I love literature, philosophy, and art. I am a junior
-            at Stuyvesant High School.
-          </p>
-          <p>
-            If you want to know more about my skills and experiences, check out my resume
-            <a href="files/Resume.pdf" target="_blank" rel="noopener noreferrer">here</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid projects" id="projects">
-    <div class="container">
-      <div class="row col-md-12">
-        <h1> Projects </h1>
-      </div>
-      <div class="row projects-content">
-        <div class="col-md-6">
-          <h3> Reddit Sentiment Analysis </h3>
-          <img src="images/reddit.jpg" class="img-fluid">
-          <p>
-            I created a website that uses natural language processing to analyze
-            the sentiment of subreddits (the groups that make up Reddit). I used
-            the Reddit API and NLTK for the model, and Flask to build the website.
-          </p>
-          <p class="description"> Check it out <a href="https://subredditsentiment.herokuapp.com/">here</a>!</p>
-        </div>
-        <div class="col-md-6">
-          <h3> The Blog (WIP) </h3>
-          <img src="images/blog.jpg" class="img-fluid">
-          <p>
-            I am working on a blog website that allows users to register, login, and create posts.
-            Users are able to read others posts, and have the ability to edit their own posts.
-            I am using Django to build this website
-          </p>
-          <p class="description"> Check it out <a href="#">here</a> when it is complete!</p>
-        </div>
+        <div class="row about-content">
+          <div class="col-md-6">
+            <img src="images/me2.JPG" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <p>
+              Welcome to my website! My name is Cullen Anderson and I love to learn new things and solve problems.
+              I'm specifically interested in computer science and artificial intelligence.
+              Outside of that, I love literature, philosophy, and art. I am a junior
+              at Stuyvesant High School in New York City.
+            </p>
+            <p>
+              If you want to know more about my skills and experiences, check out my resume
+              <a href="files/MyResume.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid personal" id="personal">
-    <div class="container">
-      <div class="row col-md-12">
-        <h1> Personal </h1>
-      </div>
-      <div class="row personal-content text-center" style="padding-bottom: 30px">
-        <p> I love to read. Here's some cool books that I like! </p>
-      </div>
-      <div class="books">
-        <a href="https://www.goodreads.com/book/show/52036.Siddhartha" target="_blank" rel="noopener noreferrer">
-          <img src="images/siddhartha.jpeg">
-        </a>
-        <a href="https://www.goodreads.com/book/show/93537.Spartacus" target="_blank" rel="noopener noreferrer">
-          <img src="images/spartacus.jpeg">
-        </a>
-        <a href="https://www.goodreads.com/book/show/976853.The_Republic_of_Plato" target="_blank" rel="noopener noreferrer">
-          <img src="images/republic.jpg">
-        </a>
-        <a href="https://www.goodreads.com/book/show/11275.The_Wind_Up_Bird_Chronicle" target="_blank" rel="noopener noreferrer">
-          <img src="images/windup.jpg">
-        </a>
-        <a href="https://www.goodreads.com/book/show/19380.Candide" target="_blank" rel="noopener noreferrer">
-          <img src="images/candide.jpg">
-        </a>
-        <a href="https://www.goodreads.com/book/show/92057.The_Autobiography_of_Malcolm_X" target="_blank" rel="noopener noreferrer">
-          <img src="images/malcolm.jpg">
-        </a>
-        <a href="https://www.goodreads.com/book/show/4982.The_Sirens_of_Titan" target="_blank" rel="noopener noreferrer">
-          <img src="images/sirens.jpg">
-        </a>
-        <a href="hhttps://www.goodreads.com/book/show/52382796-sh-gun" target="_blank" rel="noopener noreferrer">
-          <img src="images/shogun.jpg">
-        </a>
-        <a href="https://www.goodreads.com/book/show/28251250-white-noise" target="_blank" rel="noopener noreferrer">
-          <img src="images/white.jpg">
-        </a>
-        <a href="https://www.goodreads.com/book/show/237682.The_Gate_of_Heavenly_Peace" target="_blank" rel="noopener noreferrer">
-          <img src="images/heavenly.jpg">
-        </a>
-        <a href="https://www.goodreads.com/book/show/5129.Brave_New_World" target="_blank" rel="noopener noreferrer">
-          <img src="images/brave.jpeg">
-        </a>
-        <a href="https://www.goodreads.com/book/show/44882.Code" target="_blank" rel="noopener noreferrer">
-          <img src="images/code.jpg">
-        </a>
+    <div class="container-fluid projects" id="projects">
+      <div class="container">
+        <div class="row col-md-12">
+          <h1> Projects </h1>
+        </div>
+        <div class="row projects-content">
+          <div class="col-md-6 project">
+            <h3> Reddit Sentiment Analysis </h3>
+            <img src="images/reddit.jpg" class="img-fluid">
+            <p>
+              I created a website that uses natural language processing to analyze
+              the sentiment of subreddits (the groups that make up Reddit). I used
+              the Reddit API and NLTK for the model, and Flask to build the website.
+            </p>
+            <p> Check it out <a href="https://subredditsentiment.herokuapp.com/">here</a>!</p>
+          </div>
+          <div class="col-md-6 project">
+            <h3> The Blog (WIP) </h3>
+            <img src="images/blog.jpg" class="img-fluid">
+            <p>
+              I am working on a blog website that allows users to register, login, and create posts.
+              Users are able to read others posts, and have the ability to edit their own posts.
+              I am using Django to build this website
+            </p>
+            <p> Check it out <a href="#">here</a> when it is complete!</p>
+          </div>
+          <div class="col-md-6">
+            <h3> Personal Website </h3>
+            <img src="images/PersonalWebsite.jpg" class="img-fluid">
+            <p>
+              I created this personal website and hosted it using Github Pages. I created this
+              website from scratch using HTML, CSS, and Bootstrap. Meta...
+            </p>
+            <p> I would say check it out, but you're already here!</p>
+          </div>
+          <div class="col-md-6">
+            <h3> Various AI Projects </h3>
+            <img src="images/BasicAI.jpg" class="img-fluid">
+            <p>
+              I have worked on various small AI projects in Google Colab.
+              Projects I have worked on include: breast cancer classification
+              using Sklearn, Yelp sentiment analysis using Nltk and Keras, object detection
+              in cars using CNNs built in Keras, and the famous Titanic prediction from Kaggle.
+            </p>
+            <p> Check out some of these <a href="https://github.com/cullena20/inspiritai">here</a>!</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid contact" id="contact">
-    <div class="container">
-      <div class="row contact-content">
-        <div class="col-md-12 text-center">
-          <h1> Contact Me! </h1>
+    <div class="container-fluid personal" id="personal">
+      <div class="container">
+        <div class="row col-md-12">
+          <h1> Personal </h1>
         </div>
-        <div class="col-md-12 text-center" style="padding-bottom: 30px">
-          <i class="fa fa-3x fa-envelope"></i>
+        <div class="row personal-content" style="padding-bottom: 30px">
+          <p> I love to read. Here's some cool books that I like! </p>
         </div>
-        <div class="col-md-12 text-center">
-          <h4>Email Me At</h4>
-          <p><a href="mailto:canderson20@stuy.edu">canderson20@stuy.edu</a></p>
+        <div class="books">
+          <a href="https://www.goodreads.com/book/show/52036.Siddhartha" target="_blank" rel="noopener noreferrer">
+            <img src="images/siddhartha.jpeg">
+          </a>
+          <a href="https://www.goodreads.com/book/show/93537.Spartacus" target="_blank" rel="noopener noreferrer">
+            <img src="images/spartacus.jpeg">
+          </a>
+          <a href="https://www.goodreads.com/book/show/976853.The_Republic_of_Plato" target="_blank" rel="noopener noreferrer">
+            <img src="images/republic.jpg">
+          </a>
+          <a href="https://www.goodreads.com/book/show/11275.The_Wind_Up_Bird_Chronicle" target="_blank" rel="noopener noreferrer">
+            <img src="images/windup.jpg">
+          </a>
+          <a href="https://www.goodreads.com/book/show/19380.Candide" target="_blank" rel="noopener noreferrer">
+            <img src="images/candide.jpg">
+          </a>
+          <a href="https://www.goodreads.com/book/show/92057.The_Autobiography_of_Malcolm_X" target="_blank" rel="noopener noreferrer">
+            <img src="images/malcolm.jpg">
+          </a>
+          <a href="https://www.goodreads.com/book/show/4982.The_Sirens_of_Titan" target="_blank" rel="noopener noreferrer">
+            <img src="images/sirens.jpg">
+          </a>
+          <a href="hhttps://www.goodreads.com/book/show/52382796-sh-gun" target="_blank" rel="noopener noreferrer">
+            <img src="images/shogun.jpg">
+          </a>
+          <a href="https://www.goodreads.com/book/show/28251250-white-noise" target="_blank" rel="noopener noreferrer">
+            <img src="images/white.jpg">
+          </a>
+          <a href="https://www.goodreads.com/book/show/237682.The_Gate_of_Heavenly_Peace" target="_blank" rel="noopener noreferrer">
+            <img src="images/heavenly.jpg">
+          </a>
+          <a href="https://www.goodreads.com/book/show/5129.Brave_New_World" target="_blank" rel="noopener noreferrer">
+            <img src="images/brave.jpeg">
+          </a>
+          <a href="https://www.goodreads.com/book/show/44882.Code" target="_blank" rel="noopener noreferrer">
+            <img src="images/code.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid contact" id="contact">
+      <div class="container">
+        <div class="row contact-content">
+          <div class="col-md-12 text-center">
+            <h1> Contact Me! </h1>
+          </div>
+          <div class="col-md-12 text-center" style="padding-bottom: 30px">
+            <i class="fa fa-3x fa-envelope"></i>
+          </div>
+          <div class="col-md-12 text-center">
+            <h4>Email Me At</h4>
+            <p><a href="mailto:canderson20@stuy.edu">canderson20@stuy.edu</a></p>
+          </div>
         </div>
       </div>
     </div>
