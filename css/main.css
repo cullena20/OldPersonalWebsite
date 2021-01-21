@@ -4,13 +4,15 @@
 /*.navbar-custom {*/
 /*    background-color: #ff5500;*/
 /*}*/
+
 html {
     overflow: hidden;
     height: 100%;
 }
 
 body {
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     height: 100%;
 }
 
@@ -147,6 +149,11 @@ a:hover {
     padding-bottom: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+    .description {
+        padding-bottom: 30px;
+    }
+}
 
 /* The below code is for the cool stuff page*/
 
@@ -197,10 +204,4 @@ a:hover {
 
 .contact h4 {
     color: #ff8c00
-}
-
-.contact img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
