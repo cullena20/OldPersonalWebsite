@@ -2,8 +2,7 @@ html {
     position: relative;
     overflow: hidden;
     height: 100%;
-    touch-action: none;
-    -ms-touch-action: none;
+    overscroll-behavior: none;
 }
 
 body {
@@ -11,8 +10,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
-    touch-action: none;
-    -ms-touch-action: none;
+    overscroll-behavior: none;
 }
 
 /* Above styles weren't working on my phone so maybe this will help*/
