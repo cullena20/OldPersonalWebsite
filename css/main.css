@@ -1,9 +1,11 @@
 html {
+    position: relative;
     overflow: hidden;
     height: 100%;
 }
 
 body {
+    position: relative;
     overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
@@ -76,7 +78,7 @@ a:hover {
 @media only screen and (max-width: 960px) {
     .home {
         position: relative;
-        transform: translate(10%, 40%);
+        transform: translate(10%, 30%);
     }
 
     .home h1 {
