@@ -202,6 +202,10 @@ a:hover {
     display: inline-block;
 }
 
+.personal img:hover {
+    opacity: 50%
+}
+
 
 /* The below code is for the contact page*/
 
