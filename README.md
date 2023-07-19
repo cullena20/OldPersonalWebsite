@@ -1,2 +1,2 @@
 # PersonalWebsite
-This is my personal website! I created this in late 2020, so I have some updating to do.
+This is my old personal website, coded from scratch in late 2020.
